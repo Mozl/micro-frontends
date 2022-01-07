@@ -1,0 +1,23 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"wsrun --parallel start\"",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "*packages/*"
+  ],
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "concurrently": "^5.1.0",
+    "wsrun": "^5.2.0"
+  }
+}
