@@ -44,7 +44,7 @@ module.exports = {
       name: "host_app",
       filename: "remoteEntry.js",
       remotes: {
-        nav: "remote_app1@http://localhost:8081/remoteEntry.js",
+        nav: "remote_app1@http://localhost:8083/remoteEntry.js",
         store: "reduxstore@http://localhost:8082/remoteEntry.js",
       },
       exposes: {},

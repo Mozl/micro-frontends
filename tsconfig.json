@@ -17,10 +17,6 @@
     "noUnusedParameters": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
-    "strictNullChecks": false,
-    "outDir": "./build",
-    "baseUrl": ".",
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+    "strictNullChecks": false
+  }
 }

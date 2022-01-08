@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:8081/",
+    publicPath: "http://localhost:8083/",
   },
 
   resolve: {
@@ -12,7 +12,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 8081,
+    port: 8083,
     historyApiFallback: true,
   },
 
@@ -47,7 +47,7 @@ module.exports = {
         store: "reduxstore@http://localhost:8082/remoteEntry.js",
       },
       exposes: {
-        "./Header": "./src/Header"
+        "./Header": "./src/Header",
       },
       shared: {
         ...deps,
